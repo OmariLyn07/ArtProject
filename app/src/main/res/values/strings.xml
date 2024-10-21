@@ -1,9 +1,10 @@
 <resources>
-    <string name="app_name">ArtSpace</string>
+    <string name="app_name">Art Space</string>
     <string name="art_1_artist_name">Johann Georg Meyer von Bremen</string>
-    <string name="art_1_artist_info">German, 1813–1886</string>
+    <string name="art_1_artist_info">German 1813–1886</string>
     <string name="art_1_title">The New Brother</string>
     <string name="art_1_year">1874</string>
     <string name="art_1_description">The New Brother by Johann Georg Meyer von Bremen</string>
     <string name="art_1_artist_bio">Some Artist Bio</string>
+    <string name="back">Back</string>
 </resources>
