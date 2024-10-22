@@ -1,9 +1,11 @@
 package com.example.artspace
 
+import android.graphics.fonts.FontStyle
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -12,6 +14,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -24,9 +27,14 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
@@ -77,7 +85,7 @@ fun ArtistPage(navController: NavController) {
     /*
     TODO;
     Section A
-    1. Artist Profile including image, name and infor (birthplace and years alive)
+    1. Artist Profile including image, name and info (birthplace and years alive)
 
     Section B
     2. Artist Bio
@@ -85,8 +93,28 @@ fun ArtistPage(navController: NavController) {
     Section C
     3. (optional) place the code below in the proper row or column layout to make it look like the design
      */
-    Button(onClick = { navController.navigate(Screen.Home.route + "/$id") }) {
-        Text(text = stringResource(id = R.string.back))
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(16.dp)
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(20.dp)
+        ) {
+            Image(
+                painter = painterResource(id = art.artistImageId),
+                contentDescription = stringResource(id = R.string.art_1_artist_name)
+            )
+            Text(
+                text = stringResource(id = art.artistInfoId)
+            )
+
+        }
+        Button(onClick = { navController.navigate(Screen.Home.route + "/$id") }) {
+            Text(text = stringResource(id = R.string.back))
+        }
     }
 }
 
@@ -119,7 +147,7 @@ fun HomePage(navController: NavController) {
                 Spacer(modifier = Modifier.size(dimensionResource(id = R.dimen.spacer_extra_large)))
                 Row (modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.Center,
                     ) {
-                    ArtWall(current, art.artistImageId, art.descriptionId, navController)
+                    ArtWall(current, art.artworkImageId, art.descriptionId, navController)
 
                 }
             }
@@ -133,7 +161,7 @@ fun HomePage(navController: NavController) {
 
 
 @Composable
-fun ArtWall(current: Int, artistImageId: Int, descriptionId: Int, navController: NavController){
+fun ArtWall(current: Int, artworkImageId: Int, descriptionId: Int, navController: NavController){
     //Home Page section A
     //TODO;
     /*
@@ -143,7 +171,16 @@ fun ArtWall(current: Int, artistImageId: Int, descriptionId: Int, navController:
     navController.navigate(Screen.Artist.route + "/$artistId")
      */
     //ToBeRemoved
-    Text(text = "Section A - Display Artwork image here as per the design")
+
+    Button(
+        onClick = { navController.navigate(Screen.Artist.route + "/$current") },
+        shape = RoundedCornerShape(dimensionResource(R.dimen.button_corner_radius)),
+
+    ) {
+        Image(painter = painterResource(id = artworkImageId), contentDescription = stringResource(id = descriptionId))
+    }
+
+    
 }
 
 @Composable
@@ -155,7 +192,22 @@ fun ArtDescriptor(titleId: Int, artistId: Int, yearId: Int){
     2. Add artist name and year of artwork
      */
     //ToBeRemoved
-    Text(text = "Section B - Display Artwork title, artist name and year here as per the design")
+
+    Column(modifier = Modifier
+        .fillMaxWidth()
+        .padding(5.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ){
+        Text(
+            text = stringResource(id = titleId),
+            fontSize = 30.sp,
+            fontWeight = FontWeight.Bold
+        )
+        Text(
+            text = "${stringResource(id = artistId)} (${stringResource(id = yearId)})"
+        )
+    }
+
 }
 
 @Composable
@@ -178,5 +230,18 @@ fun DisplayController(current: Int, updateCurrent: (Int) -> Unit) {
     updateCurrent(current + 1) (for next button)
      */
     //ToBeRemoved
-    Text(text = "Section B - Add next and previous buttons here as per the design")
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(16.dp),
+        horizontalArrangement = Arrangement.Center
+    ){
+        Button(onClick = { /*TODO*/ }) {
+            Text(text = "Previous")
+        }
+        Spacer(modifier = Modifier.padding(20.dp))
+        Button(onClick = { /*TODO*/ }) {
+            Text(text = "Next")
+        }
+    }
 }
