@@ -7,6 +7,7 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -18,6 +19,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -27,8 +29,10 @@ import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -39,6 +43,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -121,6 +126,9 @@ fun ArtistPage(navController: NavController) {
                 modifier = Modifier
                     .clip(CircleShape)
                     .border(BorderStroke(2.dp, Color.Black), CircleShape)
+                    .size(150.dp),
+                contentScale = ContentScale.Crop,
+
 
             )
             Spacer(modifier = Modifier.padding(10.dp))
@@ -203,12 +211,20 @@ fun ArtWall(current: Int, artworkImageId: Int, descriptionId: Int, navController
      */
     //ToBeRemoved
 
-    Button(
+    TextButton(
         onClick = { navController.navigate(Screen.Artist.route + "/$current") },
-        shape = RoundedCornerShape(dimensionResource(R.dimen.button_corner_radius)),
+        shape = RoundedCornerShape(0.dp)
 
     ) {
-        Image(painter = painterResource(id = artworkImageId), contentDescription = stringResource(id = descriptionId))
+        Column {
+            Image(
+                painter = painterResource(id = artworkImageId),
+                contentDescription = stringResource(id = descriptionId),
+                modifier = Modifier
+                    .height(400.dp)
+                    .width(400.dp)
+                )
+        }
     }
 
     
@@ -265,11 +281,11 @@ fun DisplayController(current: Int, updateCurrent: (Int) -> Unit) {
             .fillMaxWidth(),
         horizontalArrangement = Arrangement.Center
     ){
-        Button(onClick = { updateCurrent(current - 1) }) {
+        OutlinedButton(onClick = { if(current != 0) {updateCurrent(current - 1)} }) {
             Text(text = "Previous")
         }
         Spacer(modifier = Modifier.padding(20.dp))
-        Button(onClick = { updateCurrent(current + 1) }) {
+        OutlinedButton(onClick = { if(current != DataSource.arts.size - 1){ updateCurrent(current + 1) } }) {
             Text(text = "Next")
         }
     }
