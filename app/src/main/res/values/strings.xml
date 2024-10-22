@@ -5,6 +5,107 @@
     <string name="art_1_title">The New Brother</string>
     <string name="art_1_year">1874</string>
     <string name="art_1_description">The New Brother by Johann Georg Meyer von Bremen</string>
-    <string name="art_1_artist_bio">Some Artist Bio</string>
+    <string name="art_1_artist_bio"> Johann Georg Meyer von Bremen, commonly known as Meyer von Bremen, was a German painter who specialized in Biblical, peasant, and family scenes.
+
+In his 21st year, he went to Düsseldorf and began his studies at the Academy of Art there, which was led by Friedrich Wilhelm Schadow, the son of sculptor Johann Gottfried Schadow. He is associated with the Düsseldorf school of painting. In 1841, Meyer opened a studio of his own, but moved to Berlin as his fame increased (1853). While scenes from the Bible were first the subjects of his brush, he later turned his attention to incidents from popular life, especially among the Hessian peasantry, and finally to the portrayal of family life in its pathetic aspect.
+
+Such pictures as ‘The Jubilee of a Hessian Pastor’ (1843), ‘Christmas Eve,’ ‘Blindman\'s Buff,’ ‘The Soldier\'s Return,’ ‘The Inundation’ (1846), ‘The Repentant Daughter’ (1852, in the gallery at Bremen), are full of intense sympathy with the “simple annals of the poor.” After taking up his residence at Berlin, he chose especially scenes from child life, which he rendered with spirited humor. Among his pictures of this kind are: \'The Little Flower Girl(1853)\', ‘The Fairy Tale,’ ‘Children Playing Blindman\'s Buff,’ ‘Grandfather and Grandchild,’ and others. A third group of his pictures includes those of young women, as single figures or in groups, such as ‘The Tryst’ and ‘The Love Letter.’ An example of his work, ‘The Letter’ (1873), is in the Metropolitan Museum of Art in New York City. </string>
     <string name="back">Back</string>
+
+    <string name="art_2_artist_name">Alexej von Jawlensky</string>
+    <string name="art_2_artist_info">Russian 1864-1941</string>
+    <string name="art_2_title">Still Life with Bottles and Fruit</string>
+    <string name="art_2_year">1900</string>
+    <string name="art_2_description">Still Life with Bottles and Fruit by Alexej von Jawlensky</string>
+    <string name="art_2_artist_bio"> Alexej Georgewitsch von Jawlensky, surname also spelt as Yavlensky, was a Russian expressionist painter active in Germany. He was a key member of the New Munich Artist\'s Association (Neue Künstlervereinigung München), Der Blaue Reiter (The Blue Rider) group and later the Die Blaue Vier (The Blue Four).
+
+Alexej von Jawlensky was born in Torzhok, a town in Tver Governorate, Russia, as the fifth child of Georgi von Jawlensky and his wife Alexandra (née Medwedewa). At the age of ten he moved with his family to Moscow. After a few years of military training, he became interested in painting, visiting the Moscow World Exposition c. 1880. Thanks to his good social connections, he managed to get himself posted to St. Petersburg and, from 1889 to 1896, studied at the art academy there, while also discharging his military duties. Jawlensky gained admittance to the circle of the renowned Russian realist painter Ilya Repin. There he met Marianne von Werefkin, a wealthy artist and former student of Repin. He requested to be her protégé, and Werefkin decided to put her work on hold to promote his work and provide him with a comfortable lifestyle.
+
+Jawlensky and Werefkin moved to Munich in 1894, where he studied in the private school of Anton Ažbe. In 1905 Jawlensky visited Ferdinand Hodler, and two years later he began his long friendship with Jan Verkade and met Paul Sérusier. Together, Verkade and Sérusier transmitted to Jawlensky both practical and theoretical elements of the work of the Nabis, and Synthetist principles of art.
+
+In Munich he met Wassily Kandinsky and various other Russian artists, and he contributed to the formation of the Neue Künstlervereinigung München. His work in this period was lush and richly coloured, but later moved towards abstraction and a simplified, formulaic style. Between 1908 and 1910 Jawlensky and Werefkin spent summers in the Bavarian Alps with Kandinsky and his companion, the painter Gabriele Münter. Here, through painting landscapes of their mountainous surroundings, they experimented with one another\'s techniques and discussed the theoretical bases of their art. Following a trip to the Baltic coast, and renewed contact with Henri Matisse in 1911 and Emil Nolde in 1912, Jawlensky turned increasingly to the expressive use of colour and form alone in his portraits.
+
+Expelled from Germany in 1914, he moved to Switzerland. He met Emmy Scheyer in 1916 (Jawlensky gave her the affectionate nickname, Galka, a Russian word for jackdaw), another artist who abandoned her own work to champion his in the United States. After a hiatus in experimentation with the human form, Jawlensky produced perhaps his best-known series, the Mystical Heads (1917–19), and the Saviour’s Faces (1918–20), which are reminiscent of the traditional Russian Orthodox icons of his childhood.
+
+In 1922, Jawlensky married Werefkin\'s former maid Hélène Nesnakomoff, the mother of his only son, Andreas, who was born before their marriage. Alexej von Jawlensky took up residence in Wiesbaden and organized In 1924 the Blue Four, whose works, thanks to Scheyer\'s tireless promotion, were jointly exhibited in Germany and the US. From 1929 Jawlensky suffered from progressively crippling arthritis, which necessitated a reduced scale and finally forced a cessation in his painting in 1937. He began to dictate his memoirs in 1938. He died in Wiesbaden, Germany, on 15 March 1941. He and his wife Helene are buried in the cemetery of St. Elizabeth\'s Church, Wiesbaden. </string>
+
+    <string name="art_3_artist_name">Joseph Binder</string>
+    <string name="art_3_artist_info">Austrian 1898-1972</string>
+    <string name="art_3_title">St. John The Baptist</string>
+    <string name="art_3_year">1962</string>
+    <string name="art_3_description">St. John The Baptist by Joseph Binder</string>
+    <string name="art_3_artist_bio"> Joseph Binder was an Austrian-born designer whose influence permeated Europe and the United States. He applied reductive compositional principles derived from Cubism and De Stijl to his posters, including the one he designed for the New York World\'s Fair in 1939.
+
+He emigrated to the United States. in 1934 and won many poster competitions, organized by the Museum of Modern Art, for such agencies as the National Defense, the United Nations, and the American Red Cross. He also designed covers for Fortune and Graphis magazine. In 1948 Binder became art director for the U.S. Navy Department, and in the 1960\'s he returned to his primary passion of painting. </string>
+
+    <string name="art_4_artist_name">Jacopo Tintoretto</string>
+    <string name="art_4_artist_info">Italian 1518-1594</string>
+    <string name="art_4_title">Tarquin and Lucretia</string>
+    <string name="art_4_year">1578</string>
+    <string name="art_4_description">Tarquin and Lucretia by Jacopo Tintoretto</string>
+    <string name="art_4_artist_bio"> Tintoretto, born Jacopo Robusti was an Italian painter and a notable exponent of the Venetian school. His contemporaries both admired and criticized the speed with which he painted, and the unprecedented boldness of his brushwork. For his phenomenal energy in painting he was termed Il Furioso (\"The Furious\"). His work is characterised by his muscular figures, dramatic gestures and bold use of perspective, in the Mannerist style.
+
+Tintoretto had very few pupils; his two sons and Maerten de Vos of Antwerp were among them. His son Domenico Tintoretto frequently assisted his father in the preliminary work for great pictures. He himself painted a multitude of works, many of them of a very large scale. At best, they would be considered mediocre and, coming from the son of Tintoretto, are disappointing. In any event, he must be regarded as a considerable pictorial practitioner in his way. There are reflections of Tintoretto to be found in the Greek painter of the Spanish Renaissance El Greco, who likely saw his works during a stay in Venice. </string>
+
+    <string name="art_5_artist_name">Johan Laurentz Jensen</string>
+    <string name="art_5_artist_info">Danish 1800-1856</string>
+    <string name="art_5_title">Game. A Pheasant And An Eider</string>
+    <string name="art_5_year">1846</string>
+    <string name="art_5_description">Game. A Pheasant And An Eider by Johan Laurentz Jensen</string>
+    <string name="art_5_artist_bio"> Johan Laurentz Jensen, often referred to as J. L. Jensen, was a Danish artist who specialized in flower painting.
+
+In parallel with his studies at the Danish Academy, he became a pupil of Christoffer Wilhelm Eckersberg and also of Cladius Detlev Fritzsch. Specializing in flower painting, Jensen continued his education in Paris under the Flemish flower painting brothers, Gérard and Cornelis van Spaendonck, and at the porcelain factory in Sèvres where he learnt the art of miniature flower painting.
+
+Taking 17th-century Dutch flower painting as a starting point, he revived the art in Denmark. His floral arrangements often had both a decorative and symbolic value. Danish plants were often accompanied by exotic flowers and fruits, sometimes even birds. He also became head artist at the Danish Porcelain Factory. Jensen had an extensive circle of customers and many students, especially women, including Louise of Hesse-Kassel who later married King Christian IX. Since the 1980s, his works have gained wide international recognition. Many are exhibited in Statens Museum for Kunst and in Thorvaldsens Museum.
+
+Jensen\'s flowers were typically arranged as a bouquet standing in a vase, usually on a tray. A dark neutral background helped to emphasize the light colourful tones of the flowers. Roses were often the principal subject, sometimes set off with another flower such as a lilly or with several flowers of different varieties. Jensen mastered the art of reproducing nature. His appreciation of earlier masterpieces can be seen in his own work. His paintings characteristically are rich in colour and variety. Some of them depict flowers lying on a table or in a basket, perhaps strung together in a wreath. While he was one of several artists who painted exotic plants from Rosenborg, he was happiest when he was painting out in the country at Gentofte, sometimes painting wild flowers or strawberries. Some of his works from the 1840s contain exotic fruits or even birds. </string>
+
+    <string name="art_6_artist_name">Koloman Moser</string>
+    <string name="art_6_artist_info">Austrian 1868-1918</string>
+    <string name="art_6_title">Franz Dangl in Uniform</string>
+    <string name="art_6_year">1891</string>
+    <string name="art_6_description">Franz Dangl in Uniform by Koloman Moser</string>
+    <string name="art_6_artist_bio"> Koloman Moser was an Austrian artist who exerted considerable influence on twentieth-century graphic art and one of the foremost artists of the Vienna Secession movement and a co-founder of Wiener Werkstätte.
+
+Moser designed a wide array of art works, including books and graphic works from postage stamps to magazine vignettes; fashion; stained glass windows, porcelains and ceramics, blown glass, tableware, silver, jewelry, and furniture.
+
+Born in Vienna, Moser studied at the Wiener Akademie and the Kunstgewerbeschule, where he also taught from 1899.
+
+Moser\'s designs in architecture, furniture, jewellery, graphics, and tapestries helped characterise the work of this era. He drew upon the clean lines and repetitive motifs of classical Greek and Roman art and architecture in reaction to the Baroque decadence of his turn-of-the-century Viennese surroundings. In 1901/1902, he published a portfolio titled Die Quelle (\"The Source\") of elegant graphic designs for such things as tapestries, fabrics, and wallpaper.
+
+In 1903, Moser and his colleague Josef Hoffmann founded Wiener Werkstätte, whose studios and artisans produced a number of aesthetically and functionally designed household goods, including glassware, flatware, silverware, rugs and textiles. In 1904, he created the Apse mosaic and glass windows for the Kirche am Steinhof in Vienna, and designed the decoration of the Medallion House of the Linke Wienzeile Buildings for architect Otto Wagner.
+
+In 1905, together with the Klimt group, he separated from the Vienna Secession. The same year, he married Editha (Ditha) Mautner von Markhof, the daughter to one of Austria\'s great industry fortunes.
+
+In 1907 Moser, due to internal conflicts and as his plans for reorganising the Werkstätte (to cope with financial problems) weren\'t realised, withdrew from the Wiener Werkstätte.
+
+Moser was one of the designers for Austria\'s leading art journal Ver Sacrum. This art journal paid great attention to design and was designed mainly by Moser, Gustav Klimt and Josef Hoffmann. His design for the cover of one edition of the art journal was later plagiarized by well known street artist and designer, Shepard Fairey. </string>
+
+    <string name="art_7_artist_name">Vincent van Goghn</string>
+    <string name="art_7_artist_info">Dutch 1853-1890</string>
+    <string name="art_7_title">Adeline Ravoux</string>
+    <string name="art_7_year">1890</string>
+    <string name="art_7_description">Adeline Ravoux by Vincent van Gogh</string>
+    <string name="art_7_artist_bio"> Vincent Willem van Gogh was a Dutch post-impressionist painter who posthumously became one of the most famous and influential figures in the history of Western art. In a decade, he created about 2,100 artworks, including around 860 oil paintings, most of which date from the last two years of his life. They include landscapes, still lifes, portraits and self-portraits, and are characterised by bold colours and dramatic, impulsive and expressive brushwork that contributed to the foundations of modern art. He was not commercially successful, and his suicide at 37 came after years of mental illness, depression and poverty.
+
+Born into an upper-middle-class family, Van Gogh drew as a child and was serious, quiet, and thoughtful. As a young man he worked as an art dealer, often travelling, but became depressed after he was transferred to London. He turned to religion and spent time as a Protestant missionary in southern Belgium. He drifted in ill health and solitude before taking up painting in 1881, having moved back home with his parents. His younger brother Theo supported him financially, and the two kept a long correspondence by letter. His early works, mostly still lifes and depictions of peasant labourers, contain few signs of the vivid colour that distinguished his later work. In 1886, he moved to Paris, where he met members of the avant-garde, including Émile Bernard and Paul Gauguin, who were reacting against the Impressionist sensibility. As his work developed he created a new approach to still lifes and local landscapes. His paintings grew brighter in colour as he developed a style that became fully realised during his stay in Arles in the south of France in 1888. During this period he broadened his subject matter to include series of olive trees, wheat fields and sunflowers.
+
+Van Gogh suffered from psychotic episodes and delusions and though he worried about his mental stability, he often neglected his physical health, did not eat properly and drank heavily. His friendship with Gauguin ended after a confrontation with a razor when, in a rage, he severed part of his own left ear. He spent time in psychiatric hospitals, including a period at Saint-Rémy. After he discharged himself and moved to the Auberge Ravoux in Auvers-sur-Oise near Paris, he came under the care of the homeopathic doctor Paul Gachet. His depression continued and on 27 July 1890, Van Gogh shot himself in the chest with a Lefaucheux revolver. He died from his injuries two days later.
+
+Van Gogh was unsuccessful during his lifetime, and he was considered a madman and a failure. He became famous after his suicide and exists in the public imagination as a misunderstood genius, the artist \"where discourses on madness and creativity converge\". His reputation began to grow in the early 20th century as elements of his painting style came to be incorporated by the Fauves and German Expressionists. He attained widespread critical, commercial and popular success over the ensuing decades, and he is remembered as an important but tragic painter, whose troubled personality typifies the romantic ideal of the tortured artist. Today, Van Gogh\'s works are among the world\'s most expensive paintings to have ever sold, and his legacy is honoured by a museum in his name, the Van Gogh Museum in Amsterdam, which holds the world\'s largest collection of his paintings and drawings. </string>
+
+
+    <string name="art_8_artist_name">Leonardo da Vinci</string>
+    <string name="art_8_artist_info">Italian 1452-1519</string>
+    <string name="art_8_title">Ginevra de\' Benci</string>
+    <string name="art_8_year">1474-1478</string>
+    <string name="art_8_description">Ginevra de\' Benci by Leonardo da Vinci</string>
+    <string name="art_8_artist_bio"> Leonardo da Vinci was an Italian polymath of the High Renaissance who is widely considered one of the greatest painters of all time. The Mona Lisa is the most famous of his works and the most famous portrait ever made. The Last Supper is the most reproduced religious painting of all time and his Vitruvian Man drawing is also regarded as a cultural icon. He is also known for his notebooks, in which he made drawings and notes on science and invention; these involve a variety of subjects including anatomy, cartography, painting, and palaeontology. Leonardo\'s collective works compose a contribution to later generations of artists rivalled only by that of his contemporary Michelangelo.
+
+Properly named Leonardo di ser Piero da Vinci, Leonardo was born out of wedlock to a notary, Piero da Vinci, and a peasant woman, Caterina, in Vinci, in the region of Florence, Italy. Leonardo was educated in the studio of the renowned Italian painter Andrea del Verrocchio. Much of his earlier working life was spent in the service of Ludovico il Moro in Milan, and he later worked in Rome, Bologna and Venice. He spent his last three years in France, where he died in 1519.
+
+Although he had no formal academic training, many historians and scholars regard Leonardo as the prime exemplar of the \"Renaissance Man\" or \"Universal Genius\", an individual of \"unquenchable curiosity\" and \"feverishly inventive imagination.\" He is widely considered one of the most diversely talented individuals ever to have lived. According to art historian Helen Gardner, the scope and depth of his interests were without precedent in recorded history, and \"his mind and personality seem to us superhuman, while the man himself mysterious and remote.\" Scholars interpret his view of the world as being based in logic, though the empirical methods he used were unorthodox for his time.
+
+Leonardo is revered for his technological ingenuity. He conceptualized flying machines, a type of armoured fighting vehicle, concentrated solar power, an adding machine, and the double hull. Relatively few of his designs were constructed or even feasible during his lifetime, as the modern scientific approaches to metallurgy and engineering were only in their infancy during the Renaissance. Some of his smaller inventions, however, entered the world of manufacturing unheralded, such as an automated bobbin winder and a machine for testing the tensile strength of wire. He is also sometimes credited with the inventions of the parachute, helicopter, and tank. He made substantial discoveries in anatomy, civil engineering, geology, optics, and hydrodynamics, but he did not publish his findings and they had little to no direct influence on subsequent science. </string>
+
 </resources>

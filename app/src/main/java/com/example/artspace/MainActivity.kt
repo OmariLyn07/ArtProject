@@ -5,19 +5,27 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -29,6 +37,8 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -96,25 +106,46 @@ fun ArtistPage(navController: NavController) {
     Column(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(16.dp)
+            .verticalScroll(rememberScrollState())
     ) {
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(20.dp)
+                .padding(20.dp),
+            horizontalArrangement = Arrangement.Center,
+            verticalAlignment = Alignment.CenterVertically
         ) {
             Image(
                 painter = painterResource(id = art.artistImageId),
-                contentDescription = stringResource(id = R.string.art_1_artist_name)
+                contentDescription = stringResource(id = art.artistInfoId),
+                modifier = Modifier
+                    .clip(CircleShape)
+                    .border(BorderStroke(2.dp, Color.Black), CircleShape)
+
             )
-            Text(
-                text = stringResource(id = art.artistInfoId)
-            )
+            Spacer(modifier = Modifier.padding(10.dp))
+            Column {
+                Text(
+                    text = stringResource(id = art.artistId),
+                    fontSize = 20.sp,
+                    fontWeight = FontWeight.Bold
+                )
+                Text(
+                    text = "(${stringResource(id = art.artistInfoId)})",
+                )
+            }
 
         }
+        Spacer(modifier = Modifier.padding(2.dp))
+        Text(
+            text = stringResource(id = art.artistBioId),
+
+        )
+
         Button(onClick = { navController.navigate(Screen.Home.route + "/$id") }) {
             Text(text = stringResource(id = R.string.back))
         }
+
     }
 }
 
@@ -194,8 +225,7 @@ fun ArtDescriptor(titleId: Int, artistId: Int, yearId: Int){
     //ToBeRemoved
 
     Column(modifier = Modifier
-        .fillMaxWidth()
-        .padding(5.dp),
+        .fillMaxWidth(),
         horizontalAlignment = Alignment.CenterHorizontally
     ){
         Text(
@@ -232,15 +262,14 @@ fun DisplayController(current: Int, updateCurrent: (Int) -> Unit) {
     //ToBeRemoved
     Row(
         modifier = Modifier
-            .fillMaxWidth()
-            .padding(16.dp),
+            .fillMaxWidth(),
         horizontalArrangement = Arrangement.Center
     ){
-        Button(onClick = { /*TODO*/ }) {
+        Button(onClick = { updateCurrent(current - 1) }) {
             Text(text = "Previous")
         }
         Spacer(modifier = Modifier.padding(20.dp))
-        Button(onClick = { /*TODO*/ }) {
+        Button(onClick = { updateCurrent(current + 1) }) {
             Text(text = "Next")
         }
     }
