@@ -150,7 +150,10 @@ fun ArtistPage(navController: NavController) {
 
         )
 
-        Button(onClick = { navController.navigate(Screen.Home.route + "/$id") }) {
+        Button(
+            onClick = { navController.navigate(Screen.Home.route + "/$id") },
+            modifier = Modifier.padding(15.dp)
+        ) {
             Text(text = stringResource(id = R.string.back))
         }
 
@@ -246,11 +249,14 @@ fun ArtDescriptor(titleId: Int, artistId: Int, yearId: Int){
     ){
         Text(
             text = stringResource(id = titleId),
-            fontSize = 30.sp,
-            fontWeight = FontWeight.Bold
+            fontSize = 27.sp,
+            fontWeight = FontWeight.Bold,
+            modifier = Modifier.padding(5.dp)
         )
         Text(
-            text = "${stringResource(id = artistId)} (${stringResource(id = yearId)})"
+            text = "${stringResource(id = artistId)} (${stringResource(id = yearId)})",
+            modifier = Modifier.padding(5.dp),
+            fontSize = 20.sp
         )
     }
 
@@ -278,7 +284,8 @@ fun DisplayController(current: Int, updateCurrent: (Int) -> Unit) {
     //ToBeRemoved
     Row(
         modifier = Modifier
-            .fillMaxWidth(),
+            .fillMaxWidth()
+            .padding(10.dp),
         horizontalArrangement = Arrangement.Center
     ){
         OutlinedButton(onClick = { if(current != 0) {updateCurrent(current - 1)} }) {
